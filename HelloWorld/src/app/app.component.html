@@ -1,6 +1,10 @@
 <div>
-  <h1>{{this.title}}</h1>
-  <img src="../assets/BLlogo.jpg" alt="BridegLabz logo"> 
+  <h1>Hello {{this.userName}} from BridegLabz</h1>
+  <img [src]="imgUrl" (click)="onClick($event)" alt="BridegLabz logo"> 
+</div>
+<div>
+  Enter User Name
+  <input [(ngModel)]="userName">
 </div>
 
 <router-outlet></router-outlet>
